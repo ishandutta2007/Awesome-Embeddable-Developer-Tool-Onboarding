@@ -1,68 +1,129 @@
-# Awesome-Embeddable-Developer-Tool-Onboarding
+# Awesome Embeddable Developer Tool & Onboarding 🚀
 
-## Top Embeddable Developer Tool & Onboarding Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Embeddable Developer Tool &amp; Onboarding Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
-*Focused on In-Docs API Playgrounds, Run-in-Client Buttons & Embeddable Code Sandboxes*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Embeddable Developer Tool & Onboarding**. These tools let developers try your API, run your SDK, or edit your code sample without leaving the documentation—covering everything from "Run in Postman" buttons and interactive OpenAPI explorers to embeddable browser sandboxes that eliminate the "install it first" friction in developer onboarding.
-
-**Examples** include Postman Run in Postman, ReadMe API Explorer, Mintlify Playground, Stoplight Elements, Redoc, Swagger UI, StackBlitz, CodeSandbox, and JSFiddle (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted API documentation, open-source embeddable explorers, and community-driven code sandboxes—ideal for teams seeking to avoid hosted documentation platform fees and maintain full control over the developer onboarding experience. The open-source landscape is genuinely functional: **Stoplight Elements** provides embeddable web components for interactive API reference docs , **Swagger UI** remains the standard for OpenAPI rendering , and **Redoc** offers a clean, zero-external-request renderer .
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Postman Run in Postman](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button)** | Embeddable button that lets developers fork your API collection directly into their Postman workspace. **Active buttons auto-update when the source collection changes**—no manual re-publishing. Supports HTML and Markdown embed formats. Collections must be in a public workspace. Customizable via JavaScript `_pm()` API to inject API keys and environments client-side . | Free (requires public workspace) | **Free**: full button functionality, auto-updates, fork counts, HTML/Markdown embed |
-| **[ReadMe API Explorer](https://docs.readme.com/)** | Hosted developer hub with an in-docs API explorer that lets developers make authenticated requests directly inside the documentation. **Hosted-only**—no self-hosted distribution. The legacy open-source `api-explorer` was archived in November 2022. Custom MDX/CSS/HTML available on Pro plan and above . | Pro: **$250/month** (annual); Enterprise: custom | **Starter**: $0 (custom domain, API reference, MCP server); **14-day Pro trial** |
-| **[Mintlify Playground](https://mintlify.com/docs/api-playground/overview)** | Interactive API playground embedded in documentation. Sends real requests and displays responses. Configurable display modes (`interactive`, `simple`, `none`, `auth`), language examples (curl, Python, JavaScript, PHP, Go, Java, Ruby, etc.), and prefill options via `x-mint` extension . | Quote-only (hosted docs platform) | Free tier available for docs; playground requires paid plan |
-| **[StackBlitz](https://stackblitz.com/)** | Embeddable browser IDE using WebContainers (Node.js in browser). **SDK supports `embedProject` and `openProject`** with dependency installation. Personal plan free with unlimited public projects . | Personal: Free; Pro/Teams tiers available | **Personal (free)**: unlimited public projects, WebContainers, embeddable editor |
-| **[CodeSandbox](https://codesandbox.io/)** | Embeddable browser sandbox and VM-based workspaces. **Embeddable via iframe** for live code examples in documentation. Free tier: 400 monthly credits, 20 sandboxes per workspace. | Pro plans available; free tier 400 credits/month | **Free**: 400 monthly credits, 20 sandboxes, embeddable editors |
-| **[JSFiddle](https://jsfiddle.net/)** | Embeddable HTML/CSS/JS playground. **Embed via iframe or script** with configurable tabs (`js,css,html,results`), light/dark themes, and automatic height adjustment. The classic choice for quick, self-contained web examples . | **Free** | **Free**: unlimited fiddles, embeddable with full configuration |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Stoplight Elements](https://github.com/stoplightio/elements)** | [![Stars](https://img.shields.io/github/stars/stoplightio/elements?style=social&color=white)](https://github.com/stoplightio/elements/stargazers) | **The most capable open-source embeddable API documentation components.** React and Web Components that render **interactive API reference docs from OpenAPI 2.0/3.0/3.1**. Features: **Try It console** for live requests, code sample generation (Curl, Python, Ruby, Java, etc.), sidebar and stacked layouts, and internal operation filtering. **No build steps**—works as a simple tag in any HTML project. Used by Spotify and Dyte in production . **Best for teams wanting a polished, embeddable OpenAPI explorer without hosting lock-in.** |
-| **[Swagger UI](https://github.com/swagger-api/swagger-ui)** | [![Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers) | **The standard OpenAPI renderer with built-in "Try it out".** Generates interactive documentation from OpenAPI/Swagger specs. Configurable operation expansion, Try It out toggling, and model rendering. **Streamlit component available** (`st_swagger_ui`) for embedding in Streamlit apps with configurable `try_it_out_enabled` and `doc_expansion` options . **Best for teams wanting the most widely-recognized OpenAPI interface with live request testing.** |
-| **[Redoc](https://github.com/Redocly/redoc)** | [![Stars](https://img.shields.io/github/stars/Redocly/redoc?style=social&color=white)](https://github.com/Redocly/redoc/stargazers) | **Clean, three-panel OpenAPI documentation renderer.** Embeddable as a standalone JS bundle. **Self-contained variant exists** that patches external CDN references (e.g., logo URLs) so there are **zero external network requests on load**—ideal for air-gapped or privacy-conscious deployments . **Best for teams wanting polished, read-only API reference docs without external dependencies.** |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Swagger UI (Streamlit)](https://pypi.org/project/st_swagger_ui/)** | — | **Streamlit component for embedding Swagger UI** in Python data apps. Supports URL or local file specs, configurable `doc_expansion` (`list`/`full`/`none`), `try_it_out_enabled`, and custom CSS. **Best for Python/Streamlit teams wanting in-app API exploration** . |
-
-**Frameworks for building custom systems**: Choose **Stoplight Elements** for the most polished embeddable OpenAPI explorer with Try It and code samples , **Swagger UI** for the standard OpenAPI interface with broad recognition , and **Redoc** for clean, self-contained reference docs with zero external calls . For code sandboxes, **StackBlitz** and **CodeSandbox** provide embeddable browser IDEs for live SDK examples.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Embeddable API explorers and sandboxes execute requests and code in the user's browser; ensure CORS policies, authentication scopes, and sandbox isolation are configured correctly. **Do not embed explorers that transmit production credentials in client-side code.**
-- **Open-source explorers have different trade-offs.** **Stoplight Elements** is the most feature-complete (Try It, code samples, 3.1 support) and production-proven (Spotify, Dyte) , but it is a React/Web Component library rather than a hosted product. **Swagger UI** is the most widely recognized but has a dated three-panel layout and lacks Markdown articles support . **Redoc** produces the cleanest read-only docs but has **no built-in Try It console** . **Hosted platforms charge for convenience**: ReadMe is **hosted-only** with no self-hosted option and its legacy open-source explorer was archived in 2022 , while Mintlify's playground requires a paid plan . **Choose based on whether you prioritize embeddability (Elements), ubiquity (Swagger UI), or zero-dependency reference docs (Redoc).**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg" alt="Maintenance" />
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome" />
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for developer relations teams, API product managers, and engineers building onboarding experiences.**  
-Let's make embeddable developer tooling more open, interactive, and onboarding-friendly.
+## 🧭 Overview & Mission
+
+**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
+*Focused on In-Docs API Playgrounds, Run-in-Client Buttons, and Embeddable Code Sandboxes*  
+📅 **Last updated: March 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Embeddable Developer Tooling & Developer Onboarding**. These tools allow developers to try your REST/GraphQL/gRPC APIs, execute SDK examples, or test live frontend and backend code snippets directly within documentation websites—eliminating the "clone and install first" barrier that causes onboarding drop-off. 
+
+Key paradigms covered include:
+- ⚡ **Interactive API Playgrounds & Explorers:** In-docs authentication, live request consoles, pre-filled payloads, and auto-generated code snippets.
+- 🚀 **Embeddable Code Sandboxes & WebContainers:** Full Node.js runtimes and frontend micro-sandboxes running client-side inside the browser.
+- 🎯 **Run-in-Client Buttons & Collections:** Direct one-click import into native developer tooling workspaces (e.g., Postman collections).
+- 📦 **Zero-Build Web Components:** Drop-in custom tags for OpenAPI 3.0 / 3.1 specification rendering.
+
+---
+
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Key Evaluation & Selection Guide](#️-key-evaluation--selection-guide)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [📜 Disclaimer](#-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global API documentation and interactive developer tooling market is valued at approximately **$2.8 billion** and projected to surpass **$7.6 billion by 2034** (growing at an 11.7% CAGR), nested inside the broader **$8.8+ billion** API management software ecosystem. 
+
+The market dynamics exhibit **moderate fragmentation**: while legacy API testing and run-button ecosystems demonstrate winner-take-most concentration around enterprise hubs like Postman, modern in-docs playgrounds and browser execution engines remain actively contested between AI-native docs-as-code SaaS entrants (e.g., Mintlify, ReadMe) and high-velocity open-source component frameworks (e.g., Swagger UI, Redoc, Scalar, Sandpack).
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+> Sorted in descending order by estimated company valuation / scale.
+
+| Product | Company Scale (Valuation / Revenue) | Description | Pricing (Starting Paid Tier) | Free Forever Tier / Free Trial Limits |
+|:---|:---|:---|:---|:---|
+| **[Postman Run in Postman](https://learning.postman.com/docs/publishing-your-api/run-in-postman/creating-run-button)** | **$5.6B valuation** (~$300M+ ARR) | Embeddable button that lets developers fork your API collection directly into their Postman workspace. Active buttons auto-update when the source collection changes. Supports HTML and Markdown embeds with JavaScript `_pm()` injection for client-side API keys. | **$12/user/month** (Basic plan, billed annually) | **Free forever plan**: Unlimited collection runs, embeddable button creation, auto-sync, public workspace collaboration up to 3 team members, and 1,000 cloud API calls/month. |
+| **[StackBlitz](https://stackblitz.com/)** | **$700M valuation** ($113M+ raised) | Embeddable browser IDE using WebContainers (Node.js running securely inside the client browser). JavaScript SDK supports programmatic `embedProject` and `openProject` with automated package installations and instant cold starts. | **$18/developer/month** (Pro plan, billed annually) | **Free forever plan**: Unlimited public projects, full WebContainers client runtime access, embeddable iframe/SDK editor, and GitHub integration for public repos. |
+| **[Mintlify Playground](https://mintlify.com/docs/api-playground/overview)** | **$500M valuation** ($67M raised) | Interactive in-docs API playground. Sends live requests, visualizes authentication states, and auto-generates client code samples across Python, JS, Go, Curl, and Ruby with `x-mint` extension overrides. | **$150/month** (Startup plan) or **$450/month** (Pro plan, billed annually) | **Free forever Hobby plan**: Includes 1 editor, standard documentation hosting, and API reference parsing. Interactive API Playground and custom domains require the **14-day free trial** of the Pro plan. |
+| **[ReadMe API Explorer](https://docs.readme.com/)** | **$75M–$100M valuation** ($10M raised) | Hosted developer hub with an in-docs interactive API explorer enabling authenticated API calls directly inside the docs. Includes developer API key personalizations, metrics, and MDX component customization. | **$79/project/month** (Startup plan, billed annually) | **Free forever Starter plan**: Custom domain, standard API reference documentation, and community support for 1 editor. Advanced interactive API Explorer unlocked via **14-day free trial** of Business/Enterprise tier. |
+| **[CodeSandbox](https://codesandbox.io/)** | **$50M–$100M valuation** ($15M+ raised) | Embeddable browser sandbox and cloud micro-VM workspaces. Embeddable via iframe and Sandpack integration for live editable code examples, live previews, and package installation directly in docs. | **$15/user/month** (Pro plan, billed annually) | **Free forever plan**: 400 monthly server credits, up to 20 sandboxes per workspace, unlimited public sandboxes, and full embeddable preview support. |
+| **[JSFiddle](https://jsfiddle.net/)** | **Bootstrapped** (Independent) | Ultra-lightweight HTML, CSS, and JavaScript playground. Embeddable via script tag or iframe with customizable tab panels (`js,css,html,results`), auto-resize, and dark/light themes. | **€8/month** (Pro monthly) or **€80/year** (~€6.67/month) | **Free forever plan**: Unlimited public fiddles, complete embeddable iframe and script support, full access to external resource CDNs, and zero ads when viewed in embeds. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+> Sorted in descending order by GitHub stargazers count. All star badges link directly to the respective repository stargazers page.
+
+| Project | GitHub Stars | Description | Best Suited For |
+|:---|:---:|:---|:---|
+| **[Swagger UI](https://github.com/swagger-api/swagger-ui)** | [![Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers) | The industry-standard OpenAPI/Swagger visualizer. Generates interactive documentation with an out-of-the-box browser-executable "Try it out" test console, deep schema definitions, and Streamlit/React wrappers. | Engineering teams needing the most widely recognized and compatible OpenAPI renderer with live testing. |
+| **[Redoc](https://github.com/Redocly/redoc)** | [![Stars](https://img.shields.io/github/stars/Redocly/redoc?style=social&color=white)](https://github.com/Redocly/redoc/stargazers) | Extremely clean, responsive three-panel OpenAPI documentation renderer. Distributable as a standalone JS bundle or zero-external-network bundle for strict air-gapped security compliance. | Teams wanting responsive, high-performance, three-panel reference documentation without external tracking. |
+| **[Scalar](https://github.com/scalar/scalar)** | [![Stars](https://img.shields.io/github/stars/scalar/scalar?style=social&color=white)](https://github.com/scalar/scalar/stargazers) | Modern, interactive API documentation engine with an integrated REST API client. Features offline-first architecture, OpenAPI 3.0/3.1 and Swagger 2.0 support, code snippets in 15+ languages, and drop-in Web Component scripts. | Modern developer portals seeking a modern Stripe-like UI with a powerful built-in request testing client. |
+| **[E2B](https://github.com/e2b-dev/E2B)** | [![Stars](https://img.shields.io/github/stars/e2b-dev/E2B)](https://github.com/e2b-dev/E2B/stargazers) | Open-source secure cloud sandboxing infrastructure for AI apps, code execution, and interactive developer onboarding. Runs untrusted code inside isolated micro-VM sandboxes with sub-second launch times. | Running real, isolated backend code samples (Python, Bash, JS) securely without client browser security risks. |
+| **[Sandpack](https://github.com/codesandbox/sandpack)** | [![Stars](https://img.shields.io/github/stars/codesandbox/sandpack?style=social&color=white)](https://github.com/codesandbox/sandpack/stargazers) | In-browser live-running component toolkit created by CodeSandbox. Enables zero-backend, embeddable, interactive coding sandboxes for React, Vue, Svelte, and TypeScript directly inside MDX/documentation. | Interactive frontend tutorials, component library docs, and framework onboarding guides. |
+| **[Stoplight Elements](https://github.com/stoplightio/elements)** | [![Stars](https://img.shields.io/github/stars/stoplightio/elements?style=social&color=white)](https://github.com/stoplightio/elements/stargazers) | Polished React and Web Component library for OpenAPI 2.0/3.0/3.1 specs. Features a built-in "Try It" request console, multiple layout modes (sidebar and stacked), multi-language code generators, and zero build step embedding. | Production developer hubs needing embeddable, zero-lock-in OpenAPI reference components with live API execution. |
+| **[RapiDoc](https://github.com/rapi-doc/RapiDoc)** | [![Stars](https://img.shields.io/github/stars/rapi-doc/RapiDoc?style=social&color=white)](https://github.com/rapi-doc/RapiDoc/stargazers) | Custom Web Component that generates interactive API documentation from OpenAPI specs. Ultra-fast, lightweight, dependency-free, and supports extensive theme customization with integrated live API invocation. | Drop-in single-tag HTML deployments that require minimal bundle overhead and comprehensive styling options. |
+
+---
+
+## 🛠️ Key Evaluation & Selection Guide
+
+When deciding between hosted SaaS solutions and open-source embeddable components for developer onboarding, consider these core trade-offs:
+
+1. **Security & Untrusted Code Execution:**
+   - Client-only playgrounds (like Swagger UI or Scalar) rely on the visitor's browser for requests, requiring accurate CORS configurations on your target API servers.
+   - For executing full-stack SDK code, **StackBlitz WebContainers** runs Node.js client-side in WebAssembly, while **E2B** executes arbitrary code in isolated cloud micro-VMs.
+
+2. **Hosted Convenience vs. Vendor Lock-In:**
+   - Hosted platforms (**ReadMe**, **Mintlify**) manage authentication persistence, analytics, and AI assistance out of the box, but carry monthly platform subscription costs.
+   - Open-source components (**Stoplight Elements**, **Scalar**, **Redoc**) give you absolute control over styling, domain hosting, and client data privacy at zero software licensing fee.
+
+3. **Time to First Hello-World (TTFHW):**
+   - Incorporating a **Postman Run button** or a pre-configured **Sandpack** playground reduces onboarding time from 15+ minutes (installing dependencies locally) down to under 5 seconds.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help keep this ecosystem guide comprehensive, accurate, and up to date:
+
+1. 🍴 Fork the repository.
+2. 🌿 Create a descriptive feature branch (`git checkout -b add-tool-xyz`).
+3. 📝 Update or add your tool in `README.md` adhering to the table format (include pricing tiers, free tier limits, and stargazer links).
+4. ✅ Commit your changes (`git commit -m "feat: add ToolXYZ"`).
+5. 🚀 Push to your branch and submit a Pull Request.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Embeddable-Developer-Tool-Onboarding&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Embeddable-Developer-Tool-Onboarding&type=date&legend=top-left)
+
+---
+
+## 📜 Disclaimer
+
+- This repository is a **community-curated** reference list and does not constitute an official endorsement.
+- Embeddable API explorers and code execution sandboxes execute network requests or scripts; always ensure appropriate CORS policies, sandbox isolation, and token security before deploying to production.
+- All product trademarks, logos, and brand names are property of their respective owners.
+
+---
+
+<p align="center">
+  <b>Built for Developer Advocates, Technical Writers, API Architects, and DevRel Teams worldwide. 🌐</b>
+</p>
