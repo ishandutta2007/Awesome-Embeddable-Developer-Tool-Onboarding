@@ -68,9 +68,9 @@ The market dynamics exhibit **moderate fragmentation**: while legacy API testing
 
 ## 💻 Open-Source GitHub Projects
 
-> Sorted in descending order by GitHub stargazers count. All star badges link directly to the respective repository stargazers page.
+> Sorted in descending order by GitHub stargazers count. All Stars_Badges link directly to the respective repository stargazers page.
 
-| Project | GitHub Stars | Description | Best Suited For |
+| Project | GitHub_Stars | Description | Best Suited For |
 |:---|:---:|:---|:---|
 | **[Swagger UI](https://github.com/swagger-api/swagger-ui)** | [![Stars](https://img.shields.io/github/stars/swagger-api/swagger-ui?style=social&color=white)](https://github.com/swagger-api/swagger-ui/stargazers) | The industry-standard OpenAPI/Swagger visualizer. Generates interactive documentation with an out-of-the-box browser-executable "Try it out" test console, deep schema definitions, and Streamlit/React wrappers. | Engineering teams needing the most widely recognized and compatible OpenAPI renderer with live testing. |
 | **[Redoc](https://github.com/Redocly/redoc)** | [![Stars](https://img.shields.io/github/stars/Redocly/redoc?style=social&color=white)](https://github.com/Redocly/redoc/stargazers) | Extremely clean, responsive three-panel OpenAPI documentation renderer. Distributable as a standalone JS bundle or zero-external-network bundle for strict air-gapped security compliance. | Teams wanting responsive, high-performance, three-panel reference documentation without external tracking. |
