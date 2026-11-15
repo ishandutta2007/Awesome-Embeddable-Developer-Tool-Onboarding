@@ -37,6 +37,7 @@ Key paradigms covered include:
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Key Evaluation & Selection Guide](#️-key-evaluation--selection-guide)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
 - [📈 Star History](#-star-history)
 - [📜 Disclaimer](#-disclaimer)
 
@@ -107,6 +108,23 @@ Contributions are warmly welcomed! Help keep this ecosystem guide comprehensive,
 3. 📝 Update or add your tool in `README.md` adhering to the table format (include pricing tiers, free tier limits, and stargazer links).
 4. ✅ Commit your changes (`git commit -m "feat: add ToolXYZ"`).
 5. 🚀 Push to your branch and submit a Pull Request.
+
+---
+
+## 💖 Support
+
+Thank you for exploring and supporting this curated resource! If you find this guide helpful for your team, developer documentation, or onboarding initiatives, please consider showing your support:
+
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** and contribute new tools, updates, or benchmarks.
+- 📢 **Share** it with your engineering team, DevRel peers, or on social media.
+- ☕ **Buy me a coffee**: If you would like to support ongoing curation and maintenance, you can sponsor through the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**.
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=githubsponsors" alt="Sponsor on GitHub" />
+  </a>
+</p>
 
 ---
 
